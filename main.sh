@@ -1,1 +1,2 @@
-bash root.sh
+#bash root.sh
+bash noninteractive.sh
