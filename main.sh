@@ -1,0 +1,1 @@
+bash freeroot/root.sh
