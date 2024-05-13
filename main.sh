@@ -1,1 +1,1 @@
-bash freeroot/root.sh
+bash root.sh
