@@ -6,3 +6,4 @@ apt install sudo
 sudo apt-get install locales
 sudo locale-gen en_US.UTF-8
 sudo update-locale LANG=en_US.UTF-8
+sudo apt-get install dialog apt-utils
