@@ -69,13 +69,6 @@ if [ ! -e "$ROOTFS_DIR/.installed" ]; then
   touch "$ROOTFS_DIR/.installed"
 fi
 
-# 创建预启动脚本
-cat << 'EOF' > ${ROOTFS_DIR}/root/pre_start.sh
-#!/bin/sh
-echo "Running pre-start script..."
-# 在这里添加你想要运行的命令
-EOF
-
 chmod +x ${ROOTFS_DIR}/root/pre_start.sh
 
 # 颜色设置
