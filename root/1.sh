@@ -1,3 +1,9 @@
-apt update && apt upgrade -y && apt update --fix-missing && apt install neofetch nano git vim curl wget sudo tmate  -y
-curl https://raw.githubusercontent.com/gdraheim/docker-systemctl-replacement/master/files/docker/systemctl3.py > /usr/bin/systemctl && chmod +x /usr/bin/systemctl
+apt update
+apt install -y sudo
+apt install -y locales
+locale-gen en_US.UTF-8
+update-locale LANG=en_US.UTF-8
+apt install -y dialog apt-utils
+apt update && apt upgrade -y
+apt install -y neofetch nano git vim curl wget sudo tmate && neofetch
 echo "-: Package and Sudo setup complete. :-"
