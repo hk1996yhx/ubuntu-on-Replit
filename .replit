@@ -5,5 +5,5 @@ modules = ["bash:v1-20231215-e6d471c"]
 channel = "stable-23_05"
 
 [deployment]
-run = ["bash", "main.sh"]
+run = ["bash", "root.sh"]
 deploymentTarget = "cloudrun"
