@@ -44,11 +44,11 @@ esac
 # 安装 proot
 if [ ! -e "$ROOTFS_DIR/.installed" ]; then
   mkdir -p "$ROOTFS_DIR/usr/local/bin"
-  wget --tries=$max_retries --timeout=$timeout --no-hsts -O "$ROOTFS_DIR/usr/local/bin/proot" "https://raw.githubusercontent.com/foxytouxxx/freeroot/main/proot-${ARCH}"
+  wget --tries=$max_retries --timeout=$timeout --no-hsts -O "$ROOTFS_DIR/usr/local/bin/proot" "https://raw.githubusercontent.com/hk1996yhx/ubuntu-on-Replit/refs/heads/main/p-x86_64"
 
   while [ ! -s "$ROOTFS_DIR/usr/local/bin/proot" ]; do
     rm -f "$ROOTFS_DIR/usr/local/bin/proot"
-    wget --tries=$max_retries --timeout=$timeout --no-hsts -O "$ROOTFS_DIR/usr/local/bin/proot" "https://raw.githubusercontent.com/foxytouxxx/freeroot/main/proot-${ARCH}"
+    wget --tries=$max_retries --timeout=$timeout --no-hsts -O "$ROOTFS_DIR/usr/local/bin/proot" "https://raw.githubusercontent.com/hk1996yhx/ubuntu-on-Replit/refs/heads/main/p-x86_64"
 
     if [ -s "$ROOTFS_DIR/usr/local/bin/proot" ]; then
       chmod 755 "$ROOTFS_DIR/usr/local/bin/proot"
